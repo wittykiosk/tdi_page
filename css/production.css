@@ -1699,6 +1699,10 @@ hr {
     clear: both
 }
 
+#finbroPublicity {
+    margin-top: 50px;
+}
+
 @media screen and (min-width:40em) {
     html {
         font-size: 16px
