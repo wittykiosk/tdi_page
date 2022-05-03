@@ -245,23 +245,58 @@
         </div>
     </div>
 
+<!--    <div class="container pt1 mt4 mb2 text&#45;&#45;gray border&#45;&#45;bottom solutions pb4">-->
+<!--        <div class="align&#45;&#45;center">-->
+<!--            <h2 class="title">Publicity of the projects</h2>-->
+<!--        </div>-->
+
+<!--        <div class="align&#45;&#45;center">-->
+<!--            <h3 class="title">FINBRO</h3>-->
+<!--            <p style="margin-bottom: 20px"><i>AAI Labs</i> participates in a project <i>FINBRO</i> financed by the <i>Norwegian Financial Mechanism</i> and the <i>state budget of the Republic of Lithuania</i>. The product developed during this project is a financial services platform that connects lenders and helps people and businesses to get the best deals for loans on the best terms. <i>AAI Labs</i> takes a major role in implementing the product.</p>-->
+<!--            <a class="btn btn&#45;&#45;secondary" onclick="toggleFinbroDisplay()" target="_blank">Read more</a>-->
+<!--        </div>-->
+
+<!--        <div id="finbroPublicity" style="display: none" class="align&#45;&#45;center" >-->
+<!--            <a href="files/finbro_publicity_files.zip">-->
+<!--                <img src="https://img.icons8.com/material-outlined/24/000000/download&#45;&#45;v2.png" alt="Download FINBRO project document and related logos files"/>-->
+<!--                <p>Download information</p>-->
+<!--            </a>-->
+<!--            <iframe width="100%" height="800" src="https://docs.google.com/document/d/e/2PACX-1vQiuVzXOB9UXJ_8G6uPGUpWF13OwuCIUtoGGJuhXxHNlZxPBv3LDyZ8c7qKiuN7hQ/pub?embedded=true"></iframe>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
     <div class="container pt1 mt4 mb2 text--gray border--bottom solutions pb4">
         <div class="align--center">
             <h2 class="title">Publicity of the projects</h2>
         </div>
 
-        <div class="align--center">
+        <div class="align--center publicity-element">
             <h3 class="title">FINBRO</h3>
             <p style="margin-bottom: 20px"><i>AAI Labs</i> participates in a project <i>FINBRO</i> financed by the <i>Norwegian Financial Mechanism</i> and the <i>state budget of the Republic of Lithuania</i>. The product developed during this project is a financial services platform that connects lenders and helps people and businesses to get the best deals for loans on the best terms. <i>AAI Labs</i> takes a major role in implementing the product.</p>
-            <a class="btn btn--secondary" onclick="toggleFinbroDisplay()" target="_blank">Read more</a>
+            <a class="btn btn--secondary" onclick="togglePublicityDisplay('finbroPublicity')" target="_blank">Read more</a>
         </div>
 
-        <div id="finbroPublicity" style="display: none" class="align--center" >
-            <a href="files/finbro_publicity_files.zip">
-                <img src="https://img.icons8.com/material-outlined/24/000000/download--v2.png" alt="Download FINBRO project document and related logos files"/>
+        <div id="finbroPublicity" class="align--center publicity-sub-element" style="display: none">
+            <a href="files/finbro_publicity_files.zip" title="Download FINBRO project document and related logos files">
+                <img src="https://img.icons8.com/material-outlined/24/000000/download--v2.png"/>
                 <p>Download information</p>
             </a>
             <iframe width="100%" height="800" src="https://docs.google.com/document/d/e/2PACX-1vQiuVzXOB9UXJ_8G6uPGUpWF13OwuCIUtoGGJuhXxHNlZxPBv3LDyZ8c7qKiuN7hQ/pub?embedded=true"></iframe>
+        </div>
+
+        <div class="align--center publicity-element ">
+            <h3 class="title">E-Commerce</h3>
+            <p style="margin-bottom: 20px"><i> AAI Labs </i> is carrying out an <i> E-Commerce </i> project that aims to introduce information technology to manage business transactions electronically to increase revenue growth.</p>
+            <a class="btn btn--secondary" onclick="togglePublicityDisplay('eCommercePublicity')" target="_blank">Read more</a>
+        </div>
+
+        <div id="eCommercePublicity" class="align--center publicity-sub-element" style="display: none">
+            <a href="files/ekomercija_publicity_files.zip" title="Download E-Commerce project document and related logos files">
+                <img src="https://img.icons8.com/material-outlined/24/000000/download--v2.png"/>
+                <p>Download information</p>
+            </a>
+            <iframe width="100%" height="800" src="https://docs.google.com/document/d/e/2PACX-1vSFehCRL1Q4D3g7x-sv8A41Ip6-YL_5LVIhSuMUD3mQ8QFRgk39iNAevHoQFY9Lpg/pub?embedded=true"></iframe>
         </div>
     </div>
 
@@ -491,8 +526,8 @@
 </footer>
 
 <script>
-    function toggleFinbroDisplay() {
-        const x = document.getElementById("finbroPublicity");
+    function togglePublicityDisplay(publicityDivId) {
+        const x = document.getElementById(publicityDivId);
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
