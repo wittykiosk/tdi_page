@@ -49,6 +49,22 @@
     padding-right: 2em;
 }
 
+.publicity-element {
+    margin-top: 6em;
+}
+
+.publicity-element p {
+    margin-bottom: 20px;
+}
+
+.publicity-element a {
+    margin-top: 1em;
+}
+
+.publicity-sub-element {
+    margin-top: 3em;
+}
+
 /* NOT JUNK END */
 
 
@@ -1697,6 +1713,10 @@ hr {
 
 .clearfix:after {
     clear: both
+}
+
+#finbroPublicity {
+    margin-top: 50px;
 }
 
 @media screen and (min-width:40em) {
